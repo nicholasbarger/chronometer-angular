@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="example">
+<head>
+    <title>Chronometer Date and Datetime Picker Angular</title>
+    <link href="../chronometer/chronometer.css" rel="stylesheet" />
+    <link href="../chronometer/examples.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="../jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="../moment.min.js"></script>
+    <script type="text/javascript" src="../moment-timezone-with-data.min.js"></script>
+    <script type="text/javascript" src="../angular.min.js"></script>
+
+    <script type="text/javascript" src="../chronometer/chronometer.js"></script>
+    <script type="text/javascript" src="chronometer-angular.js"></script>
+    <script type="text/javascript" src="examples-app.js"></script>
+</head>
+<body>
+    <section id="overview">
+        <h1>Chronometer Date and Datetime Picker</h1>
+        <p>The goal of this control is to allow accurate picking of dates and datetimes which incorporate timezone functionality.</p>
+        <p>The control is dependent on <a href="http://jquery.com/">jQuery</a> and <a href="http://momentjs.com/">moment.js</a>.</p>
+        <p>The control must work in IE9+, Firefox, Safari, and Chrome.  It also must contain wrappers for Knockout.js and Angular.js.</p>
+    </section>
+
+    <section id="samples" ng-controller="exampleController">
+        <h2>Samples</h2>
+        <p>The following are a list of samples demonstrating the capabilities of the Chronometer Date and Datetime Picker:</p>
+
+        <h3>Simple Date</h3>
+        <p>Pick a date in the following format: 'YYYY-MM-DD'.  The end output should not have any time or timezone information.</p>
+        <chronometer id="example1" date="'2015-05-06'" model="start"></chronometer> <pre>{{ start }}</pre>
+
+        <h3>Simple Datetime</h3>
+        <p>Pick a date and time in the following format: 'YYYY-MM-DD hh:mm Z z' as well as a provided timezone. The timezone indicates the timezone for the entry and should default to the current local timezone.</p>
+        <chronometer id="example2" date="'2015-09-1 2:00'" outputformat="YYYY-MM-DD hh:mm Z z" includetime="true" model="end"></chronometer> <pre>{{ end }}</pre>
+    </section>
+</body>
+</html>
