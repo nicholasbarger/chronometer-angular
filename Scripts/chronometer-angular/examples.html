@@ -28,11 +28,11 @@
 
         <h3>Simple Date</h3>
         <p>Pick a date in the following format: 'YYYY-MM-DD'.  The end output should not have any time or timezone information.</p>
-        <chronometer id="example1" date="'2015-05-06'" model="start"></chronometer> <pre>{{ start }}</pre>
+        <chronometer id="example1" model="start"></chronometer> <pre>{{ start }}</pre>
 
         <h3>Simple Datetime</h3>
         <p>Pick a date and time in the following format: 'YYYY-MM-DD hh:mm Z z' as well as a provided timezone. The timezone indicates the timezone for the entry and should default to the current local timezone.</p>
-        <chronometer id="example2" date="'2015-09-1 2:00'" outputformat="YYYY-MM-DD hh:mm Z z" includetime="true" model="end"></chronometer> <pre>{{ end }}</pre>
+        <chronometer id="example2" outputformat="YYYY-MM-DD hh:mm Z z" includetime="true" model="end"></chronometer> <pre>{{ end }}</pre>
     </section>
 </body>
 </html>
